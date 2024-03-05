@@ -56,7 +56,8 @@ sudo apt -y install python2
 
 section "Installing Golang"
 sudo apt -y install golang
-
+HOME_DIR=$(eval echo ~$USER)
+export PATH=$PATH:/$HOME_DIR/go/bin
 
 section "Installing Additional Packages"
 sudo apt -y install libcurl4-openssl-dev libxml2 libxml2-dev libxslt1-dev ruby-dev build-essential libgmp-dev zlib1g-dev build-essential libssl-dev libffi-dev python-dev libldns-dev jq ruby-full python3-setuptools python3-dnspython rename findutils
